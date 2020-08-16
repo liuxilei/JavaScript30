@@ -1,0 +1,32 @@
+{
+  "name": "javascript30",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxilei/JavaScript30.git"
+  },
+  "author": "liuxilei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuxilei/JavaScript30/issues"
+  },
+  "homepage": "https://github.com/liuxilei/JavaScript30#readme",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
